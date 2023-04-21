@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: "TT Lakes";
+}
+
+.nav-menu__wrap {
+    background-color: white;
+    height: 88px;
+}
+
+.nav-menu__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 16px 24px 16px;
+}
+
+.nav-menu__container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-menu__container:first-child::after {
+    content: "";
+    display: inline-block;
+    border-left: 2px solid #EAEAEA;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.nav-menu__container--additional {
+    display: none;
+}
+
+.nav-menu__button {
+    appearance: none;
+    border: 0;
+    background-color: inherit;
+    height: 40px;
+    cursor: pointer;
+}
+
+.company-logo {
+    display: inline-block;
+}
+
+.company-logo__icon {
+    width: 97px;
+    height: 51px;
+}
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.title-wrap::before {
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 4px;
+    background: #41F6D7;
+}
+
+.title {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.nav-buttons {
+    display: none;
+}
+
+.slider-menu {
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.slider-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-menu__list {
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.slider-menu__item {
+    font-size: 16px;
+    color: #7E7E82;
+    line-height: 24px;
+    flex-shrink: 0;
+    padding: 8px 16px 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.slider-menu__item:hover {
+    background-color: white;
+    border-color: #B8FFEC;
+}
+
+.slider-menu__item:focus {
+    background-color: white;
+    border-color: #B8FFEC;
+}
+
+.slider-menu__item:active {
+    background-color: white;
+    border-color: #B8FFEC;
+}
+
+.content-block {
+    padding-bottom: 16px;
+}
+
+.text-wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.content-block__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #1B1C21;
+}
+
+.content-block__text--added {
+    display: none;
+}
+
+.continue-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    appearance: none;
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    padding-top: 16px;
+}
+
+.company-image {
+    padding-top: 16px;
+    padding-bottom: 35px;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .nav-menu__container:first-child::after {
+        display: none;
+    }
+
+    .nav-menu__container--additional {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .nav-menu__container--additional::after {
+        content: "";
+        display: inline-block;
+        border-left: 2px solid #EAEAEA;
+        height: 32px;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+
+    .slider-menu__list {
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-bottom: 32px;
+    }
+
+    .content-block {
+        display: flex;
+        gap: 48px;
+    }
+
+    .text-wrap {
+        padding-left: 24px;
+        padding-right: 0;
+        padding-bottom: 10px;
+        min-width: 312px;
+    }
+
+    .content-block__text--added {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: #1B1C21;
+        padding-top: 32px;
+    }
+
+    .continue-button {
+        padding-left: 9px;
+    }
+
+    .company-image {
+        min-width: 360px;
+        min-height: 208px;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1120px) {
+    
+    .nav-menu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-wrap {
+        padding-top: 42px;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 32px;
+        height: 40px;
+        align-self: flex-end;
+        padding-right: 32px;
+    }
+
+    .nav-buttons__btn {
+        appearance: none;
+        border: 0;
+        background-color: inherit;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-buttons__btn img {
+        padding-left: 8px;
+    }
+
+    .title {
+        margin-left: 30px;
+    }
+
+    .title-wrap::before {
+        width: 3px;
+    }
+
+    .slider-menu {
+        overflow: hidden;
+    }
+
+    .slider-menu__list {
+        flex-wrap: wrap;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+    }
+
+    .content-block {
+        display: flex;
+        padding-top: 0;
+        gap: 36px;
+    }
+
+    .text-wrap {
+        min-width: 524px;
+        padding-left: 34px;
+    }
+
+    .continue-button {
+        padding-left: 6px;
+    }
+
+    .company-image {
+        min-width: 532px;
+        min-height: 307px;
+    }
+
+}
